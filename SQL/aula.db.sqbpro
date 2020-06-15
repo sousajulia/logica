@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="/Users/5era/Documents/Curso Arbyte/aula.db" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><current_tab id="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="548"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="Carros"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="Carros" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk=""><sort/><column_widths/><filter_values/><display_formats/><hidden_columns/><plot_y_axes/></table></browse_table_settings></tab_browse><tab_sql><sql name="carros">INSERT INTO Carros (Ano, Cor, Nome, Valor) 
+VALUES(1994, &quot;azul&quot;, &quot;sinca chambord&quot;, 60000);
+INSERT INTO Carros (Ano, Cor, Nome, Valor) 
+VALUES(1983, &quot;vermelho&quot;, &quot;chevette&quot;, 17000);
+INSERT INTO Carros (Ano, Cor, Nome, Valor) 
+VALUES(1976, &quot;preto&quot;, &quot;chevette&quot;, 18000);
+INSERT INTO Carros (Ano, Cor, Nome, Valor) 
+VALUES(1988, &quot;preto&quot;, &quot;fusca&quot;, 87000);
+INSERT INTO Carros (Ano, Cor, Nome, Valor) 
+VALUES(1997, &quot;branco&quot;, &quot;gol&quot;, 12000);
+INSERT INTO Carros (Ano, Cor, Nome, Valor) 
+VALUES(2001, &quot;azul&quot;, &quot;celta&quot;, 8000);
+INSERT INTO Carros (Ano, Cor, Nome, Valor) 
+VALUES(2003, &quot;verde&quot;, &quot;fiat uno&quot;, 10000);
+INSERT INTO Carros (Ano, Cor, Nome, Valor) 
+VALUES(2005, &quot;amarelo&quot;, &quot;fiat mobi&quot;, 32000);
+INSERT INTO Carros (Ano, Cor, Nome, Valor) 
+VALUES(2011, &quot;vermelho&quot;, &quot;cross fox&quot;, 45000);
+INSERT INTO Carros (Ano, Cor, Nome, Valor) 
+VALUES(2019, &quot;verde&quot;, &quot;fiat mobi&quot;, 120000);
+</sql><sql name="distinct">SELECT DISTINCT cor
+FROM Carros</sql><sql name="count">SELECT count (ano)
+FROM Carros
+where Ano &lt; 2000</sql><sql name="avg">SELECT avg (Valor)
+FROM Carros
+WHERE ano &gt; 2000 </sql><sql name="sum">SELECT SUM(valor)
+FROM Carros</sql><sql name="like1">SELECT Nome
+FROM Carros
+WHERE nome like &quot;F%&quot;</sql><sql name="like2">SELECT Nome
+FROM Carros
+WHERE nome like &quot;%a&quot;</sql><sql name="between">SELECT Nome
+FROM Carros
+WHERE Ano BETWEEN 1990 AND 1995</sql><sql name="maxvalor">SELECT MAX(valor)
+FROM Carros
+</sql><sql name="minvalor">SELECT min(valor)
+FROM Carros</sql><sql name="maxano">SELECT MAX(ano)
+FROM Carros</sql><sql name="minano">SELECT min(ano)
+FROM Carros</sql><sql name="order asc">SELECT *
+FROM Carros
+ORDER BY Nome ASC</sql><sql name="order desc">SELECT *
+FROM Carros
+ORDER BY Nome DESC</sql><current_tab id="13"/></tab_sql></sqlb_project>
